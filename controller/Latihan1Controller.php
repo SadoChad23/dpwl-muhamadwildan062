@@ -9,3 +9,4 @@ class Latihan1Controller
         require './view/latihan1view.php';
     }
 }
+?>

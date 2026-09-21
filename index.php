@@ -28,3 +28,4 @@ if (file_exists($controllerFile)) {
 } else {
     echo "Controller tidak ditemukan.";
 }
+?>
