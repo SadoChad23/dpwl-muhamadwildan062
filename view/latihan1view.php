@@ -10,8 +10,18 @@
     <?php
     $i = 1;
     foreach ($datamhs as $mhs) {
-        echo $i++ . '. ' . $mhs['nama'] . ' ' . $mhs['nim'] . '<br>';
-    }
     ?>
+     <tr>
+                <td><?= $i++; ?>.</td>
+                <td><?= $mhs['nim']; ?></td>
+                <td><?= $mhs['nama']; ?></td>
+                <td><?= $mhs['alamat']; ?></td>
+                <td><?= $mhs['no_hp']; ?></td>
+            </tr>
+        <?php
+        }
+        ?>
+    </table>
+Admin: <?= htmlspecialchars($nama_user) ?>
 </body>
 </html>
