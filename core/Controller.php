@@ -13,7 +13,26 @@ class controller
             public function model($modelname)
             {
                 require_once './model/' . $modelname . '.php';
-                return new $modelname();    
+
+                $modelName = basename($modelname);
+
+                return new $modelName();
+            }
+
+            public function post($key = null)
+            {
+                if ($key === null) {
+                    return $_POST;
+                }
+                return $_POST[$key] ?? null;
+            }
+
+            public function get($key = null)
+            {
+                if ($key === null) {
+                    return $_GET;
+                }
+                return $_GET[$key] ?? null;
             }
         };
     }

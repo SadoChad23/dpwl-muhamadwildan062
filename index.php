@@ -22,7 +22,7 @@ $controllerFile = 'controller/' . $controllerName . '.php';
 //    require_once $controllerFile;
 $objController = new $controllerName();
 if (method_exists($objController, $method)) {
-    if ($parameter !== null) {
+    if ($parameter != null) {
         $objController->$method($parameter);
     } else {
         $objController->$method();

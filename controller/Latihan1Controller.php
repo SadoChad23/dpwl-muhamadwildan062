@@ -5,7 +5,7 @@ class Latihan1Controller extends controller
     public function index()
     {
        $data['datamhs'] = $this->load->model('Latihan1Model')->getAllMhs();
-       $this->session->set_userdata('nmuser', 'Wildan');
+       $this->session->set_userdata('nmuser', 'wildan');
        $data['nama_user'] = $this->session->userdata('nmuser');
        $this->load->view('latihan1view', $data);
     }
