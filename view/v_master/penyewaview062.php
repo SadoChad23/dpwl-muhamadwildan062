@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Starter Page Novi</h1>
+            <h1 class="m-0">Starter Page wildan</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -25,7 +25,7 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <a href="<?= base_url('Penyewa_C062/create_penyewa062') ?>"
+                <a href="<?= base_url('Penyewa_C062/create_penyewa') ?>"
                   class="btn btn-primary mb-3">Tambah Data</a>
                 <table class="table table-bordered table-striped">
                     <thead>
