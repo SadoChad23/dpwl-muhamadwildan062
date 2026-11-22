@@ -27,7 +27,7 @@ class Shopping extends Controller
     $dt['dtkeranjang'] = $cekdata->DataKeranjang($this->session->userdata('EmailPlg'));
     $this->load->view('layoutshop/headershop', $dt);
     $this->load->view('layoutshop/menushop');
-    $this->load->view('v_master_Shop/detail_mobil_view', $dt);
+    $this->load->view('v_master_shop/detail_mobil_view', $dt);
     $this->load->view('layoutshop/footershop');
 }
 }
